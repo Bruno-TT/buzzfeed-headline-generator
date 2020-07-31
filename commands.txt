@@ -1,0 +1,11 @@
+//load whole page
+
+
+for(i=0; i<100; i++){document.querySelector("#mod-feed-cards-1 > div.feed-load-more__wrapper > button > span").click();await new Promise(r => setTimeout(r, 2000));}
+
+
+//print headlines
+
+
+out="";for (x of document.getElementsByClassName("js-card__link link-gray")){out+=x.text+"\n";}
+
