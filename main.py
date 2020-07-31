@@ -58,6 +58,7 @@ def wordlist_to_headline(wordlist):
         #if not a number, then randomly capitalize words
         elif random.random() <= cap_prob:
             word = word.upper()
+        else:word=word[0].upper()+word[1:]
 
         outlist.append(word)
 
@@ -77,7 +78,7 @@ def get_headline():
 
 # raw text files
 filepaths = glob.glob("copies/*.txt")
-order = 3
+order = 5
 cap_prob = 0.3
 delay = 3
 

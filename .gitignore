@@ -1,3 +1,4 @@
 copies/*.txt
 copies/.sync/**
 .vscode/**
+unused/**
